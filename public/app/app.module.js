@@ -1,6 +1,6 @@
-angular.module('BooksApp', ['books', 'lists'])
-  .controller('mainController', function($scope) {
-    $scope.header = 'My books';
+angular.module('BooksApp', ['menu', 'books', 'lists'])
+  .controller('mainController', function() {
+    this.header = 'My books';
   })
   .directive('main', function() {
     return {
