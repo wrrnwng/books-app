@@ -1,10 +1,12 @@
 [
   {
     "title":"El Pooch",
-    "author":"Alex Nelson"
+    "author":"Alex Nelson",
+    "imagePath":"images/puppy.jpg"
   },
   {
     "title":"The Flight",
-    "author":"Scott Masterson"
+    "author":"Scott Masterson",
+    "imagePath":"images/airplane.jpg"
   }
 ]

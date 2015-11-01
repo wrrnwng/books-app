@@ -3,6 +3,7 @@
     "title":"Top 10 Australian beaches",
     "number":"10",
     "name":"Whitehaven Beach",
-    "location":"Whitsunday Islands"
+    "location":"Whitsunday Islands",
+    "imagePath":"images/beach.jpg"
   }
 ]

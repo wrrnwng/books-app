@@ -1,13 +1,19 @@
 <div ng-controller="booksController">
   <md-card class="book-card" ng-repeat="book in books">
-    <!--         <img ng-src={{book.imagePath}} class="md-card-image" alt="Wash Out"> -->
-    <md-card-content>
-      <h1>{{book.title}}</h1>
-      <h3>By {{book.author}}</h3>
-    </md-card-content>
-    <md-card-footer>
-      <md-button>FREE SAMPLE</md-button>
-      <md-button>REVIEW</md-button>
-    </md-card-footer>
+    <div layout="row">
+      <div flex="25">
+        <img ng-src={{book.imagePath}} class="md-card-image" alt="Wash Out">
+      </div>
+      <div flex="75">
+        <md-card-content>
+          <h1>{{book.title}}</h1>
+          <h3>By {{book.author}}</h3>
+        </md-card-content>
+        <md-card-footer>
+          <md-button>FREE SAMPLE</md-button>
+          <md-button>REVIEW</md-button>
+        </md-card-footer>
+      </div>
+    </div>
   </md-card>
 </div>

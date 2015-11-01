@@ -1,6 +1,6 @@
 <div ng-controller="listsController">
   <md-card ng-repeat="list in lists">
-    <!--         <img ng-src={{book.imagePath}} class="md-card-image" alt="Wash Out"> -->
+    <img ng-src={{list.imagePath}} class="md-card-image" alt="Wash Out">
     <md-card-content>
       <h1>{{list.title}}</h1>
       <h3>Number {{list.number}}</h3>
