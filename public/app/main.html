@@ -1,11 +1,12 @@
-<div ng-controller="mainController as main">
+<div ng-controller="mainController">
   <md-content>
     <md-toolbar>
-      <h1>{{main.header}}</h1>
+      <h1>{{header}}</h1>
     </md-toolbar>
     <div menu></div>
-    <div layout="row">
+    <div layout="{{layout}}">
       <div flex>
+        <div welcome></div>
         <div books></div>
       </div>
       <div flex>
