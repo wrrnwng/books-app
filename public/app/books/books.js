@@ -1,20 +1,32 @@
 angular.module('books', [])
   .controller('booksController', ['$http', '$scope', 'booksService', function($http, $scope, booksService) {
-    $scope.books = [];
-    $scope.$watch('books', function() {
-      booksService.setBooks($scope.books);
+    $scope.library = [];
+    $scope.$watch('library', function() {
+      booksService.setBooks($scope.library);
       booksService.booksUpdated();
     });
-    $http.get('./data/books.json')
+    $scope.$on('bookAdded', function() {
+      $scope.library = booksService.getBooks();
+      booksService.booksUpdated();
+    });
+    $http.get('./assets/data/books.json')
       .then(function(res) {
-        $scope.books = res.data;
+        $scope.library = res.data;
       });
   }])
   .factory('booksService', ['$rootScope', function($rootScope) {
     var books = [];
     return {
+      addBook: function(newBook) {
+        // called by other controllers
+        books.push(newBook);
+        $rootScope.$broadcast('bookAdded');
+      },
       booksUpdated: function() {
         $rootScope.$broadcast('booksUpdated');
+      },
+      getBooks: function() {
+        return books;
       },
       getTitles: function() {
         return books.map(function(book) {

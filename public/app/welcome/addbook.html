@@ -1,0 +1,26 @@
+<md-card class="card" ng-show="showAddBook">
+  <md-card-content class="content" layout-padding>
+    <form>
+      <div>
+        <label class="md-display-1">Title:</label>
+        <br>
+        <input required name="title" ng-model="title" class="md-display-1" ng-change="findTitle(title)">
+        <div>
+          <small ng-show="titleExists">
+            Title already exists!
+          </small>
+        </div>
+      </div>
+      <div>
+        <label class="md-display-1">Author:</label>
+        <br>
+        <input name="author" ng-model="author" class="md-display-1">        
+      </div>
+    </form>
+  </md-card-content>
+  <md-divider class="divider"></md-divider>
+  <md-card-footer>
+    <md-button class="btn" ng-click="clickCancel()"><span class="md-headline">CANCEL</span></md-button>
+    <md-button class="btn btn-2" ng-click="clickAdd()"><span class="md-headline">ADD</span></md-button>
+  </md-card-footer>
+</md-card>

@@ -5,7 +5,7 @@ angular.module('lists', [])
       listsService.setLists($scope.lists);
       listsService.listsUpdated();
     });
-    $http.get('./data/lists.json')
+    $http.get('./assets/data/lists.json')
       .then(function(res) {
         $scope.lists = res.data;
       });

@@ -1,15 +1,18 @@
 <div ng-controller="listsController">
-  <md-card ng-repeat="list in lists">
-    <img ng-src={{list.imagePath}} class="md-card-image" alt="Wash Out">
-    <md-card-content>
-      <h1>{{list.title}}</h1>
-      <h3>Number {{list.number}}</h3>
-      <h3>{{list.name}}</h3>
-      <h3>{{list.location}}</h3>
+  <md-card ng-repeat="list in lists" class="card">
+    <div class="list-img-container">
+      <img ng-src={{list.imagePath}} class="md-card-image" alt="Wash Out">
+    </div>
+    <md-card-content class="content">
+      <h1 class="md-display-1">{{list.title}}</h1>
+      <h2 class="md-headline">Number {{list.number}}</h2>
+      <h2 class="md-headline">{{list.name}}</h2>
+      <h2 class="md-headline">{{list.location}}</h2>
     </md-card-content>
+    <md-divider class="divider"></md-divider>
     <md-card-footer>
-      <md-button>SHARE</md-button>
-      <md-button>EXPLORE</md-button>
+      <md-button class="btn"><span class="md-headline">SHARE</span></md-button>
+      <md-button class="btn btn-2"><span class="md-headline">EXPLORE</span></md-button>
     </md-card-footer>
   </md-card>
 </div>

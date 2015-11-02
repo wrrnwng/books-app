@@ -1,0 +1,97 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.card-container {
+  background-color: #e3e3e3;
+}
+
+#my-books-header {
+  background-color: #eb1561;
+  color: white;
+  display: inline-block;
+  position: relative;
+}
+
+#my-books-header span {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+/* Form */
+form input {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* Cards */
+.card {
+  background-color: white;
+  border-radius: 5px;
+}
+
+.divider {
+  border: 1px solid #ddd;
+}
+
+.content {
+  padding: 24px;
+}
+
+.btn {
+  margin: 36px;
+}
+
+.btn span {
+  font-weight: bold;
+}
+
+.btn-2 {
+  color: #ffab30;
+}
+
+/* Book Cards */
+.book-img-container {
+  overflow: hidden;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.book-img-container img {
+  display: block;
+  height: 260px;
+  width: auto;
+  margin-left: -100%;
+}
+
+.footer {
+  position: relative;
+}
+
+/* List Cards */
+.list-img-container {
+  overflow: hidden;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+/* Menu */
+.menu {
+  background-color: white;
+}
+
+.menu md-button {
+  display: inline-block;
+}
+
+.menu md-button span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.menumobile {
+  position: absolute;
+  width: 100%;
+  z-index: 300;
+}
