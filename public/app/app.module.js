@@ -16,3 +16,13 @@ angular.module('BooksApp', ['menu', 'welcome', 'books', 'lists'])
       templateUrl: './app/main.html'
     };
   })
+  .directive('menuicon', function() {
+    return {
+      templateUrl: './assets/images/icons/ic_menu_24px.svg'
+    };
+  })
+  .directive('closeicon', function() {
+    return {
+      templateUrl: './assets/images/icons/ic_close_24px.svg'
+    };
+  });
