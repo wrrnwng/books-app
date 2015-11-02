@@ -1,14 +1,14 @@
 <div ng-controller="mainController">
   <md-toolbar id="my-books-header">
     <div layout="row">
-      <md-button class="btn" ng-show="isMobile" ng-click="menuToggle()">
+      <md-button ng-show="isMobile" ng-click="menuToggle()">
         <div menuicon ng-show="!menuOpened"></div>
         <div closeicon ng-show="menuOpened"></div>
       </md-button>
-      <md-button class="btn" ng-show="!isMobile">
+      <md-button ng-show="!isMobile">
         <svg width="0" height="24"></svg>
       </md-button>
-      <span class="md-headline header">{{header}}</span>
+      <span class="md-headline">{{header}}</span>
     </div>
   </md-toolbar>
   <div menu ng-show="!isMobile || menuOpened"></div>

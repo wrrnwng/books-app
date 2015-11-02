@@ -13,6 +13,10 @@ body {
   position: relative;
 }
 
+#my-books-header md-button {
+  padding: 18px;
+}
+
 #my-books-header span {
   position: absolute;
   top: 50%;
