@@ -1,7 +1,7 @@
 <div ng-controller="menuController" ng-class="{menumobile: isMobile}">
   <div layout-sm="column" layout-gt-sm="row">
     <md-content ng-repeat="item in items" class="menu">
-      <md-button class="btn"><span class="md-headline">{{item}}</span></md-button>
+      <md-button class="btn">{{item}}</md-button>
       <md-divider class="divider" ng-show="isMobile"></md-divider>
     </md-content>
   </div>

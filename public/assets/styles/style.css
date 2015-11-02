@@ -36,11 +36,11 @@ form input {
 }
 
 .content {
-  padding: 24px;
+  padding: 12px;
 }
 
 .btn {
-  margin: 36px;
+  margin: 24px;
 }
 
 .btn span {
@@ -56,13 +56,14 @@ form input {
   overflow: hidden;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+  width: 100%;
 }
 
 .book-img-container img {
   display: block;
-  height: 260px;
+  height: 190px;
   width: auto;
-  margin-left: -100%;
+  margin-left: -50%;
 }
 
 .footer {
@@ -74,6 +75,10 @@ form input {
   overflow: hidden;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+}
+
+.gray {
+  color: gray;
 }
 
 /* Menu */

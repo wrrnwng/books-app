@@ -2,19 +2,19 @@
   <md-card-content class="content" layout-padding>
     <form>
       <div>
-        <label class="md-display-1">Title:</label>
+        <label class="md-title">Title:</label>
         <br>
-        <input required name="title" ng-model="title" class="md-display-1" ng-change="findTitle(title)">
+        <input required name="title" ng-model="title" class="md-title" ng-change="findTitle(title)">
         <div>
-          <small ng-show="titleExists">
+          <small class="gray" ng-show="titleExists">
             Title already exists!
           </small>
         </div>
       </div>
       <div>
-        <label class="md-display-1">Author:</label>
+        <label class="md-title">Author:</label>
         <br>
-        <input name="author" ng-model="author" class="md-display-1">        
+        <input name="author" ng-model="author" class="md-title">        
       </div>
     </form>
   </md-card-content>
