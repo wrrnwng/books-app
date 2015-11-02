@@ -22,7 +22,7 @@ angular.module('welcome', [])
         booksService.addBook({
           title: $scope.title,
           author: $scope.author,
-          imagePath: ''
+          imagePath: 'assets/images/blank-book.png'
         });
         $scope.showAddBook = false;        
       }
