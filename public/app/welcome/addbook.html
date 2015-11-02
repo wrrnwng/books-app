@@ -4,7 +4,7 @@
       <div>
         <label class="md-title">Title:</label>
         <br>
-        <input required name="title" ng-model="title" class="md-title" ng-change="findTitle(title)">
+        <input required name="title" ng-model="title" class="md-subhead" ng-change="findTitle(title)">
         <div>
           <small class="gray" ng-show="titleExists">
             Title already exists!
@@ -14,13 +14,13 @@
       <div>
         <label class="md-title">Author:</label>
         <br>
-        <input name="author" ng-model="author" class="md-title">        
+        <input name="author" ng-model="author" class="md-subhead">        
       </div>
     </form>
   </md-card-content>
   <md-divider class="divider"></md-divider>
   <md-card-footer>
-    <md-button class="btn" ng-click="clickCancel()"><span class="md-headline">CANCEL</span></md-button>
-    <md-button class="btn btn-2" ng-click="clickAdd()"><span class="md-headline">ADD</span></md-button>
+    <md-button class="btn" ng-click="clickCancel()">CANCEL</md-button>
+    <md-button class="btn btn-2" ng-click="clickAdd()">ADD</md-button>
   </md-card-footer>
 </md-card>
