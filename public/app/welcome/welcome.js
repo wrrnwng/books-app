@@ -21,7 +21,8 @@ angular.module('welcome', [])
       if (!$scope.titleExists) {
         booksService.addBook({
           title: $scope.title,
-          author: $scope.author
+          author: $scope.author,
+          imagePath: ''
         });
         $scope.showAddBook = false;        
       }
